@@ -31,7 +31,7 @@ function getCityName() {
     changeToSydney();
   } else if(isLa(cityName)) {
     changeToLa();
-  } else alert('This is not valid');
+  } else {alert('This is not a valid city');
   }
 
 
@@ -71,8 +71,4 @@ function isLa(cityName) {
 
 function changeToLa (){
   $('body').css('background', 'url(images/la.jpg)');
-}
-
-function isNotValid(cityName) {
-  var result===
 }
