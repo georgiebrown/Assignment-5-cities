@@ -26,15 +26,53 @@ function getCityName() {
   if(isNewYork(cityName)) {
     changeToNewYork();
   } else if(isAustin(cityName)) {
-
+    changeToAustin();
+  } else if(isSydney(cityName)) {
+    changeToSydney();
+  } else if(isLa(cityName)) {
+    changeToLa();
+  } else alert('This is not valid');
   }
+
+
 }
 
 function isNewYork(cityName) {
-  var result = ['New York City', 'NYC', 'New York'].includes(cityName)
+  var result = ['nyc', 'New York City', 'NYC', 'New York'].includes(cityName)
   return result
 }
 
 function changeToNewYork() {
   $('body').css('background', 'url(images/nyc.jpg)');
+}
+
+function isAustin(cityName) {
+  var result = ['austin', 'Austin', 'ATX'].includes(cityName)
+  return result
+}
+
+function changeToAustin() {
+  $('body').css('background', 'url(images/austin.jpg)');
+}
+
+function isSydney(cityName) {
+  var result = ['Sydney', 'sydney', 'SYD'].includes(cityName)
+  return result
+}
+
+function changeToSydney(){
+  $('body').css('background', 'url(images/sydney.jpg)');
+}
+
+function isLa(cityName) {
+  var result= ['LAX', 'LA', 'Los Angeles'].includes(cityName)
+  return result
+}
+
+function changeToLa (){
+  $('body').css('background', 'url(images/la.jpg)');
+}
+
+function isNotValid(cityName) {
+  var result===
 }
